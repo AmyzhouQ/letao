@@ -1,0 +1,2 @@
+2018.11.13
+login页面input type = "email" 弹出英文提示
