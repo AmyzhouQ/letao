@@ -1,2 +1,45 @@
+项目总结回顾:
+乐淘项目:电商 
+--------------------------------login----------------------------  
+login页面:jquery  bootstrap面板 表单   表单校验 bootstrap-validator
+          插件说明:1.bootstrap:自定义结构,多种样式类型,基于jquery
+                  2.bootstrap-validator:表单校验
+          html: 1.container 版心设置
+                2.栅格布局+列偏移 col-lg-offset-4
+                3.bootstrap  组件:面板  C3:表单
+                4.form表单 设id="form"
+                5.placeholder默认值
+                6.input设name="username或其他"
+                7.显示空格用输入法全圆
+                8.reset重置按钮,submit提交按钮
+                9.左右对称布局,可以先栅格一个区域,再左右浮动
+
+          css:  1. line-hight:只有内容的高度,没有padding  文字居中显示
+          js: 1.输入框表不能为空,2-6位,提示信息,对错图标显示
+                  插件bootstrap-validator    
+              2.需求:提交按钮,将表单信息提交,会刷新页面.在页面不刷新的情况下,ajax请求后台验证用户名密码
+                并且将验证结果在输入框下提示出来
+                  步骤:1.阻止页面刷新                e.preventDefault();
+                       2.发送ajax请求                $ajax({}),打印info
+                       3.if判断(1)成功页面跳转        location.href=""
+
+                                    $("#form").data("bootstrapValidator")构建实例,__proto__有API多种方法
+                               (2)用户名不存在          .updateStatus()
+                               (3)密码错误
+              3.点击重置按钮,内容状态重置,重置按钮本身就要内容重新的功能
+                步骤:1.获取重置按钮         属性选择器$('[type="reset"]')
+                     2.注册点击事件         jq注册事件.click(function(){})
+                                            原生       .onclick=function(){}
+                     3.重置状态            $("#form").data("bootstrapValidator").resetForm()
+
+-----------------------------------------------------------------------------------------
+
+                                          
+                        
+                
+
+
 2018.11.13
-login页面input type = "email" 弹出英文提示
+login页面input type = "email" 弹出英文提示,修改成text
+
+
