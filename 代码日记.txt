@@ -42,5 +42,6 @@ login页面:jquery  bootstrap面板 表单   表单校验 bootstrap-validator
                       
 2018.11.13
 login页面input type = "email" 弹出英文提示,修改成text
+slideToggle()下拉菜单
 
 
