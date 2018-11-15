@@ -1,3 +1,9 @@
-
+#main_left,
+#main_right{
+  display: inline-block;
+  width: 48%;
+  height: 400px;
+  background-color: pink;
+}
 
 
