@@ -9,6 +9,12 @@ ul{
   padding: 0;
   margin: 0;
 }
+th,td{
+  text-align: center;
+}
+.mt-20{
+  margin-top: 20px;
+}
 .red{
   color: #A94442;
 }
