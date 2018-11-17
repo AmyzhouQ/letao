@@ -42,10 +42,10 @@ $(function(){
       }
     }
   });
-});
+
 
 // 先阻止页面跳转 再请求ajax
-$(function(){
+
   $("#form").on('success.form.bv', function (e) {
     // 阻止页面跳转
     e.preventDefault();
@@ -68,10 +68,10 @@ $(function(){
       }
     })
   })
-});
+
 
 // 重置功能
-$(function(){
+
   $('[type="reset"]').click(function(){
     $("#form").data('bootstrapValidator').resetForm();
   })  

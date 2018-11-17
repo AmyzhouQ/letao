@@ -23,9 +23,9 @@ $(function () {
     }]
   };
   myChart1.setOption(option1);
-})
 
-$(function () {
+
+
   var myChart2 = echarts.init(document.getElementById('main_right'));
   var option2 = {
     title: {

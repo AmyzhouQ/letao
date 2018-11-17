@@ -38,9 +38,9 @@ $(function(){
       }
     }
   });
-});
 
-$(function(){
+
+
   $("#form").on('success.form.bv', function (e) {
     e.preventDefault();
     $.ajax({
@@ -61,9 +61,9 @@ $(function(){
       }
     })
   });
-});
 
-$(function(){
+
+
   $('[type = "reset"]').click(function(){
     $("#form").data("bootstrapValidator").resetForm();
   }) 

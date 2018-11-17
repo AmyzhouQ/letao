@@ -1,4 +1,5 @@
 //进度条
+$(function(){
 $( document ).ajaxStart(function() {
   NProgress.start();
 });
@@ -11,24 +12,22 @@ $( document ).ajaxStop(function() {
 });
 
 // 点击分类管理二级菜单显示隐藏
-$(function(){
   $(".cate").click(function(){
     $(this).next().stop().slideToggle();  
   })
-});
+
 
 // 单击icon-left 侧边栏滑出
-$(function(){
   $(".icon-left").click(function(){
     $(".lt-aside").toggleClass("hidemenu");
     $(".lt-main").toggleClass("hidemenu"); 
     $(".lt-topbar").toggleClass("hidemenu"); 
   })
-})
+
 
 // 模态框退出功能
-$(function(){
-  $(".btn-out").click(function(){
+
+  $("#outBtn").click(function(){
     $.ajax({
       type: "get",
       url: "/employee/employeeLogout",
@@ -41,4 +40,5 @@ $(function(){
       }
     })
   })
+  
 })
