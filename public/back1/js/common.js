@@ -20,7 +20,6 @@ $(function(){
 
 
 // aside滑出
-
   $(".icon-left").click(function(){
     $(".aside").toggleClass("hidemenu");
     $(".main").toggleClass("hidemenu");
@@ -29,8 +28,7 @@ $(function(){
 
 
 // 退出功能
-
-  $(".icon-right").click(function(){
-    alert(1)
+  $("#outBtn").click(function(){
+    location.href = "login.html";
   })
 })

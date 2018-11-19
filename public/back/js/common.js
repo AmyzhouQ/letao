@@ -24,6 +24,11 @@ $( document ).ajaxStop(function() {
     $(".lt-topbar").toggleClass("hidemenu"); 
   })
 
+  // 点击退出按钮.模态框显示
+  $("#iconBtn").click(function(){
+    $('#outModal').modal("show");
+  })
+
 
 // 模态框退出功能
 

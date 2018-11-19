@@ -38,6 +38,7 @@ $(function(){
   $("#addBtn").click(function(){
     $("#addModal").modal("show");
   })
+  
 
   // 表单校验
   $("#form").bootstrapValidator({
@@ -72,7 +73,6 @@ $(function(){
         if(info.success){
           $("#addModal").modal("hide");
           render();
-
           $("#form").data('bootstrapValidator').resetForm("true");
 
         }

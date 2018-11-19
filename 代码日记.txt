@@ -45,3 +45,12 @@ login页面input type = "email" 弹出英文提示,修改成text
 slideToggle()下拉菜单
 
 
+2018.11.18
+1.移动端的乐淘商城
+  index页面.给container设paddingtop和bottom,main设置宽高100%,
+  因为轮播图是position:absoulute,所以main也要定位
+
+2018.11.19
+模板引擎渲染   var htmlStr = template("searchTmp",{list: arr}); list:arr
+
+

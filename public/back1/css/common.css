@@ -18,7 +18,9 @@ a:visited{
   text-decoration: none;
 }
 /* 设置样式 */
-
+.red{
+  color: red;
+}
 /* aside */
 .aside{
   width: 180px;

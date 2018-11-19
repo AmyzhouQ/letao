@@ -12,6 +12,9 @@ ul{
 th,td{
   text-align: center;
 }
+td{
+  vertical-align:middle;
+}
 .mt-20{
   margin-top: 20px;
 }
